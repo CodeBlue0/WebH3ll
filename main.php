@@ -22,3 +22,4 @@
   //  echo "반갑습니다 $_SESSION[]"
 } ?>
 <a href="join.php">회원가입</a>
+커밋이 어려워요.
