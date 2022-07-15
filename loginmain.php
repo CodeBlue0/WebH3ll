@@ -18,8 +18,11 @@
     </tr>
 </table>
 </form>
-<?php } else {
-  //  echo "반갑습니다 $_SESSION[]"
-} ?>
 <a href="join.php">회원가입</a>
-커밋이 어려워요.
+<?php } else {
+    //print_r($_SESSION);
+    echo "반갑습니다 ".$_SESSION['name'];
+    ?>
+<br>
+<a href="logout.php">로그아웃</a>
+<?php } ?>

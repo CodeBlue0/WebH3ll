@@ -6,10 +6,10 @@
     $id = $_POST['id'];
     $password = $_POST['password'];
 
-    $query = "INSERT INTO login (name,id,password) VALUES ($name,$id,password($password))";
+    $query = "INSERT INTO login (name,id,password) VALUES ('$name','$id',password('$password'))";
     mysqli_query($connect,$query);
 ?>
 
 <script>
-    location.href="main.php";
+    location.href="loginmain.php";
 </script>
