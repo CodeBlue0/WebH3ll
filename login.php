@@ -22,5 +22,5 @@
     <?php } ?>
 
 <script>
-    location.href="loginmain.php";
+    location.href="main.php";
 </script>
