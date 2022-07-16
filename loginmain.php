@@ -47,7 +47,11 @@
 </head>
 <body style="overflow-x: hidden">
 <div class="container">
-    <p><p><h1>WeBHell</h1></p></p>
+    <p><p> 
+        <a href="/main.php" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <p class="fs-1 fw-bold text-black mx-3 my-2">WeBHell</p>
+        </a>
+    </p></p>
   <div class="logincontainer p-5">
   <form method="post" action="login.php">
     <div class="form-floating mb-3">

@@ -13,10 +13,11 @@
 </head>
 <body style="overflow-x: hidden">
     <?php include "head.php";?>
+    <hr class="mb-4">
 
-    
+    <div class="container"></div>
 
-    <?php include "foot.php"; ?>
+    <?php include "foot.php";?>
 </body>
 </html>
 
