@@ -17,24 +17,22 @@
     html, body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  height: auto;
 }
 
 #wrap {
   min-height: 100vh;
-  position: relative;
-  width: 100%; 
-  background-color: #f2f2f2;
-}
-
-section {
-  padding-bottom: 105px;
+  height: auto;
+  padding-bottom: 80px; 
 }
 
 footer {
   width: 100%;
-  height: 90px;
+  height: 80px;
   bottom: 0px;
-  position: absolute;
+  position: relation;
+  transform: translateY(-100%);
   border-top: 1px solid #c4c4c4;
   padding-top: 15px;
   color: #808080;

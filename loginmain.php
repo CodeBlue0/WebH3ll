@@ -66,9 +66,9 @@
     </form">
     <footer> 
         <ul class = "nav justify-content-center">
-            <a href='#123' target='_blank'>아이디 찾기</a> |
-            <a href='#123' target='_blank'>비밀번호 찾기</a> |
-            <a href='join.php' target='_blank'>회원가입</a>
+            <a href='#123'>아이디 찾기</a> |
+            <a href='#123'>비밀번호 찾기</a> |
+            <a href='join.php'>회원가입</a>
         </ul>
     </footer>
   </div>
