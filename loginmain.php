@@ -63,7 +63,7 @@
         <label for="floatingPassword">비밀번호</label>
     </div>
     <button class="btn btn-primary my-4" type="submit">로그인</button>  
-    <form method="post" action="login.php">
+    </form">
     <footer> 
         <ul class = "nav justify-content-center">
             <a href='#123' target='_blank'>아이디 찾기</a> |
