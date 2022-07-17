@@ -22,13 +22,14 @@
     <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-5">
+    <p style="font-family: 'Nanum Myeongjo'; font-size:44px; color: #0d2d84; font-weight:bold; text-align: start;">Q&As</p>  
     <form method="post" action="upload.php" enctype="multipart/form-data">
         <div style="height: 60vh;">
             <div class="mb-2 my-4">
                 <label for="exampleFormControlInput1" class="form-label">제목</label>
                 <input class="form-control" id="exampleFormControlInput1" name="title">
             </div>
-            <div class="mb-5">
+            <div class="mb-2">
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="category">
                     <option selected value="0">질문 유형</option>
                     <option value="1">Service 오류</option>
@@ -36,16 +37,22 @@
                     <option value="3">로그인 오류</option>
                 </select>
             </div>
+            <div class="form-check mb-5">
+                <input class="form-check-input" type="checkbox" name="isscret" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    비밀 게시글
+                </label>
+            </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">질문내용</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" name="content"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="content"></textarea>
             </div>
-            <div class="mb-3">
-                <label for="formFileMultiple" class="form-label m-3">파일</label>
+            <div class="mb-4">
+                <label for="formFileMultiple" class="form-label">파일</label>
                 <input class="form-control-sm" type="file" id="formFileMultiple" multiple name="file">
-            </div>  
             </div>
-            <button type="submit" class="btn btn-primary">제출하기</button>
+            <button type="submit" class="btn btn-primary">제출하기</button>  
+            </div>
         </div>
     </form>
     </div>

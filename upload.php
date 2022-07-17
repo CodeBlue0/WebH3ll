@@ -1,8 +1,11 @@
 <?php
     include_once "sqlstart.php";
+    print_r($_POST);
     $title=$_POST['title'];
     $category=$_POST['category'];
     $content=$_POST['content'];
+    if(isset($_POST['isscret']) && $_POST['isscret'] =='on') $isscret = 'on';
+    else $isscret=''; 
     $filename="";
     $filepath="";
 
@@ -17,7 +20,7 @@
         }
     }
     $id=$_SESSION['id'];
-    $query = "INSERT INTO community (id,title,content,category,filename,filepath) VALUES ('$id','$title','$content','$category','$filename','$filepath')";
+    $query = "INSERT INTO community (id,title,content,category,isscret,filename,filepath) VALUES ('$id','$title','$content','$category','$isscret','$filename','$filepath')";
     mysqli_query($connect,$query);
     Header("Location: community.php?page=1");
 ?> 

@@ -19,8 +19,12 @@
     <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-3">
+    <div style="height: 70vh;">
+        
+        <p style="font-family: 'Nanum Myeongjo'; font-size:44px; color: #0d2d84; font-weight:bold; text-align: start;">Service</p> 
+        <p>&nbsp;</p> 
         <!-- 본론 -->
-      <h1> Service </h1>
+      
       <h4> IP Ping </h4>
       <hr>
       <h4> dnslookup </h4>

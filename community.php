@@ -24,8 +24,9 @@
     <div class="col-md-3"></div>
     <div class="col-md-4">
         <div style="height: 70vh;">
+        
+        <p style="font-family: 'Nanum Myeongjo'; font-size:44px; color: #0d2d84; font-weight:bold; text-align: start;">Q&As</p> 
         <p>&nbsp;</p> 
-        <p style="font-family: 'Nanum Myeongjo'; font-size:44px; color: #0d2d84; font-weight:bold; text-align: start;">Q&As</p>  
         <!-- 본론쓰는 란 -->
         <?php 
             $list_num=5;
@@ -37,8 +38,9 @@
         ?>
         <p style="font-family: 'Nanum Myeongjo'; font-size:18px; font-weight:bold; text-align: start;"><?=$result['title']?></p>  
             <p><?php
+                if($result['isscret']!='on'){
                 if(strlen($result['content']) < 100) { echo $result['content']; } 
-                else { echo substr($result['content'],0,300).'...'; }
+                else { echo substr($result['content'],0,300).'...'; }} else echo "비밀 게시판입니다.";
             ?></p>
         <hr>
         <?php } ?>
