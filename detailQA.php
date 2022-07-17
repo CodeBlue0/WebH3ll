@@ -56,7 +56,8 @@
             <div class="mb-4">
                 <label for="formFileMultiple" class="form-label">파일 다운로드</label>
                 <?php if($result['filename'] == '') echo "없음"; else { ?>
-                <a href='detailQA.php?idx=<?=$result['idx']?>' class="text-decoration-none"><?=$result['filename']?></a>
+                    
+                <a href='download.php?down=<?=$result['filepath']?>' target='_blank' class="text-decoration-none"><?=$result['filename']?></a>
                 <?php } ?>
             </div>
             <br>

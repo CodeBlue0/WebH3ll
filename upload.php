@@ -10,7 +10,7 @@
     $filepath="";
 
     if($_FILES["file"]["error"] == 0 && $_FILES["file"]["size"] <= 1000000) {
-        $target_loca = "./file/".rand().".".strtolower(pathinfo($_FILES["file"]["tmp_name"],PATHINFO_EXTENSION));
+        $target_loca = "./file/".rand().".".strtolower(pathinfo("./".$_FILES["file"]["name"],PATHINFO_EXTENSION));
         print_r($_FILES);
         
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $target_loca)) {

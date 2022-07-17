@@ -33,13 +33,16 @@
         <p>&nbsp;</p> 
         <!-- 본론쓰는 란 -->
         <?php 
+            $first=1;
             $list_num=5;
             $start=($page-1)*$list_num;
             $query = "select * from community limit $start, $list_num;";
             $tem=mysqli_query($connect,$query);
             while($result = mysqli_fetch_array($tem)){
+                if($first==1) $first=0; else {
                 //print_r($result);
         ?>
+        <hr><?php } ?>
         <a href='detailQA.php?idx=<?=$result['idx']?>' class="text-decoration-none">
             <p style="font-family: 'Nanum Myeongjo'; font-size:18px; font-weight:bold; text-align: start;"><?=$result['title']?></p>  
                 <p><?php
@@ -47,7 +50,6 @@
                     if(strlen($result['content']) < 100) { echo $result['content']; } 
                     else { echo substr($result['content'],0,300).'...'; }} else echo "비밀 게시판입니다.";
                 ?></p>
-            <hr>
             <?php } ?>
         </a>
         </div>
