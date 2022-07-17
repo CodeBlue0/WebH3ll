@@ -10,7 +10,7 @@ error_reporting(E_ALL^E_WARNING); ?>
       <ul class="nav col-12 col-md-5 mb-2 justify-content-between mb-md-0">
         <li><a href="main.php" class="nav-link px-3 link-secondary"><h5>Home</h5></a></li>
         <li><a href="service.php" class="nav-link px-3 link-dark"><h5>Service</h5></a></li>
-        <li><a href="community.php?page=1" class="nav-link px-3 link-dark"><h5>Community</h5></a></li>
+        <li><a href="community.php?page=1" class="nav-link px-3 link-dark"><h5>Q&As</h5></a></li>
       </ul>
     </div>
     <?php if(!$_SESSION['islogin']) { ?>
