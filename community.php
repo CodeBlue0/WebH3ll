@@ -1,6 +1,8 @@
 <?php
     include_once "sqlstart.php";
     if($_SESSION['islogin'] != 1) {Header("Location: loginmain.php");}
+    $page = $_GET['page'];
+    if(!isset($page) || !($page>0)) $page = 1;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,20 +22,23 @@
     <?php include "head.php";?>
     <div class="row">
     <div class="col-md-3"></div>
-    <div class="col-md-3">
+    <div class="col-md-7">
        <div style="height: 70vh;">
        본론쓰는 란
         </div>
         <nav aria-label="...">
             <ul class="pagination">
-                <li class="page-item disabled">
-                <a class="page-link">Previous</a>
+                <li class="page-item <?php if($page==1) {echo "disabled";}?>">
+                <a class="page-link" href="community.php?page=<?=$page-1?>">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active"> <a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item active"><a class="page-link" href="#"><?=$page?></a></li>
+                <li class="page-item"> <a class="page-link" href="community.php?page=<?=$page+1?>"><?=$page+1?></a></li>
+                <li class="page-item"><a class="page-link" href="community.php?page=<?=$page+2?>"><?=$page+2?></a></li>
                 <li class="page-item">
                 <a class="page-link" href="#">Next</a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-primary mx-5" onclick="location.href='writemain.php'">글쓰기</button>
                 </li>
             </ul>
         </nav>
