@@ -1,3 +1,7 @@
+<?php
+    include_once "sqlstart.php";
+    if($_SESSION['islogin'] != 1) {Header("Location: loginmain.php");}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
