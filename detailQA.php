@@ -9,6 +9,12 @@
     $tem=mysqli_query($connect,$query);
     $result = mysqli_fetch_array($tem);
     if(!isset($result['id']) || $result['id']=='') header('location:'.$prevPage);
+    if($result['isscret']=='on' && $result['id'] != $_SESSION['id']) { ?>
+        <script>
+            alert('금지된 접근입니다.');
+            location.href='http://localhost/community.php?page=1';
+        </script>
+    <?php }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +53,7 @@
             <div class="mb-5">
                 <input class="form-check-input" type="hidden" name="isscret" id="flexCheckDefault" disabled>
                 <label class="form-check-label" for="flexCheckDefault">
-                    비밀 게시글
+                    <?php if($result['isscret'] == 'on'){ ?> 비밀 게시글 <?php } ?>
                 </label>
             </div>
             <div class="mb-3">
@@ -62,8 +68,8 @@
             </div>
             <br>
             <div class="d-flex justify-content-between">
-                <button type="submit" class="btn btn-outline-primary" onClick="location.href='detailQA.php?idx=<?=$idx-1?>'" <?php if($idx==1) echo "disabled"; ?>>이전</button>
-                <button type="submit" class="btn btn-outline-primary" onClick="location.href='detailQA.php?idx=<?=$idx+1?>'">다음</button>
+                <button type="submit" class="btn btn-outline-primary mb-5" onClick="location.href='detailQA.php?idx=<?=$idx-1?>'" <?php if($idx==1) echo "disabled"; ?>>이전</button>
+                <button type="submit" class="btn btn-outline-primary mb-5" onClick="location.href='detailQA.php?idx=<?=$idx+1?>'">다음</button>
             </div>  
             </div>
     </div>
