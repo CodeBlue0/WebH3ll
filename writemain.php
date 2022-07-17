@@ -45,7 +45,7 @@
                 <input class="form-control-sm" type="file" id="formFileMultiple" multiple name="file">
             </div>  
             </div>
-            <button type="submit" class="btn btn-outline-primary btn-lg">제출하기</button>
+            <button type="submit" class="btn btn-primary">제출하기</button>
         </div>
     </form>
     </div>

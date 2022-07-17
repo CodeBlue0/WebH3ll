@@ -16,7 +16,8 @@
             $filepath=$target_loca;
         }
     }
-    $query = "INSERT INTO community (title,content,category,filename,filepath) VALUES ('$title','$content','$category','$filename','$filepath')";
+    $id=$_SESSION['id'];
+    $query = "INSERT INTO community (id,title,content,category,filename,filepath) VALUES ('$id','$title','$content','$category','$filename','$filepath')";
     mysqli_query($connect,$query);
-    //Header("Location: community.php?page=1");
+    Header("Location: community.php?page=1");
 ?> 

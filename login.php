@@ -13,6 +13,8 @@
     if($user) {
         $_SESSION['islogin'] = 1;  
         $_SESSION['name'] = $user['name'];
+        $_SESSION['nickname'] = $user['nickname'];
+        $_SESSION['id'] = $user['id'];
         //print_r($user);
     } else { ?>
     <script>

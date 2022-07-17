@@ -22,9 +22,27 @@
     <?php include "head.php";?>
     <div class="row">
     <div class="col-md-3"></div>
-    <div class="col-md-7">
-       <div style="height: 70vh;">
-       본론쓰는 란
+    <div class="col-md-4">
+        <div style="height: 70vh;">
+        <p>&nbsp;</p> 
+        <p style="font-family: 'Nanum Myeongjo'; font-size:44px; color: #0d2d84; font-weight:bold; text-align: start;">Q&As</p>  
+        <!-- 본론쓰는 란 -->
+        <?php 
+            $list_num=5;
+            $start=($page-1)*$list_num;
+            $query = "select * from community limit $start, $list_num;";
+            $tem=mysqli_query($connect,$query);
+            while($result = mysqli_fetch_array($tem)){
+                //print_r($result);
+        ?>
+        <p style="font-family: 'Nanum Myeongjo'; font-size:18px; font-weight:bold; text-align: start;"><?=$result['title']?></p>  
+            <p><?php
+                if(strlen($result['content']) < 100) { echo $result['content']; } 
+                else { echo substr($result['content'],0,300).'...'; }
+            ?></p>
+        <hr>
+        <?php } ?>
+        
         </div>
         <nav aria-label="...">
             <ul class="pagination">
