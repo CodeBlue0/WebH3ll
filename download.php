@@ -1,6 +1,6 @@
 <?php
   $down = $_GET['down'];
-  $down = str_replace('/', '', $down);
+#  $down = str_replace('/', '', $down);
   $filesize = filesize($down);
   
   if(file_exists($down)){

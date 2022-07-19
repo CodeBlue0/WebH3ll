@@ -9,7 +9,7 @@
     $tem=mysqli_query($connect,$query);
     $result = mysqli_fetch_array($tem);
     if(!isset($result['id']) || $result['id']=='') header('location:'.$prevPage);
-    if($result['isscret']=='on' && $result['id'] != $_SESSION['id']) { ?>
+    if($result['isscret']=='on' && $result['id'] != $_SESSION['id'] && $_SESSION['id'] != 'admin') { ?>
         <script>
             alert('금지된 접근입니다.');
             location.href='http://localhost/community.php?page=1';
