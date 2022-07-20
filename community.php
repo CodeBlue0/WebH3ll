@@ -36,7 +36,7 @@
             $first=1;
             $list_num=5;
             $start=($page-1)*$list_num;
-            $query = "select * from community limit $start, $list_num ORDER BY DESC;";
+            $query = "select * from community ORDER BY idx DESC limit $start, $list_num;";
             $tem=mysqli_query($connect,$query);
             while($result = mysqli_fetch_array($tem)){
                 if($first==1) $first=0; else {
