@@ -6,8 +6,9 @@
 ## :seedling:PHP 웹 페이지 제작
 `php 언어로 제작된 게시글, 파일업로드, 로그인 기능 등이 포함된 취약한 웹 사이트입니다.`
 * **:floppy_disk:git** : [https://github.com/WebH3ll/PhilJoong](https://github.com/WebH3ll/PhilJoong)</br>
-* **:movie_camera:Server** : http://3.38.95.245/PhilJoong/main.php
-### 웹사이트 기능
+* **:movie_camera:Server** : http://3.38.95.245/PhilJoong/main.php </br></br>
+
+### :factory:웹사이트 기능
 * 회원가입, 로그인, 로그아웃 기능 구현
 * 세션 혹은 쿠키를 이용하여 사용자 로그인 유무 검증
 * Admin(관리자) 계정
