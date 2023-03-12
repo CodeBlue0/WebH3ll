@@ -6,7 +6,7 @@
 ## :seedling:PHP 웹 페이지 제작
 `php 언어로 제작된 게시글, 파일업로드, 로그인 기능 등이 포함된 취약한 웹 사이트입니다.`
 * **:floppy_disk:git** : [https://github.com/WebH3ll/PhilJoong](https://github.com/WebH3ll/PhilJoong)</br>
-* **:movie_camera:Server** : http://3.38.95.245/PhilJoong/main.php </br></br>
+* **:movie_camera:Server** : **END**
 
 ### :factory:웹사이트 기능
 * 회원가입, 로그인, 로그아웃 기능 구현
@@ -27,4 +27,4 @@
 <br/><br/><br/>
 ## :deciduous_tree:OWASP Juice Shop
 `노션에 기록된 OWASP Juice Shop 단계별 라이트업입니다.`
-* [OWASP Juice Shop](https://www.notion.so/OWASP-Juice-Shop-e11f5a402d52445caf999c570dba769f)
+* [OWASP Juice Shop](https://www.notion.so/OWASP-Juice-Shop-12ac66213551435ab13c30463495dd21)
